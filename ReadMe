@@ -1,25 +1,8 @@
-## Object Oriented Programming
+🌍 Land Management System
+The Land Management System enables users to register different types of land such as Agricultural, Residential, Commercial, and Industrial. The system uses a Scanner for input and validates fields like land ID (numeric), owner name, location (alphabetic), and land use status. Based on the user's land type selection, additional attributes are collected (e.g., number of units for residential land, commercial zone status, environmental clearance). Each registered land entry is stored in a List<Land>, and a report is generated immediately after registration. At the end, the system prints all registered land reports. Validation methods ensure proper data types are entered.
 
-# 1. Land Management System
-This module allows for the registration and reporting of different land types: Agricultural, Residential, Commercial, and Industrial. Users interact with a console-based menu to input land details such as land ID, owner name, location, land size, and status. The system applies validation to ensure correct data entry formats (e.g., numeric for ID, alphabetic for names). Each land type can capture additional attributes (like number of units for residential or clearance status for industrial). After registration, a report is generated, and all registered land details are displayed at the end.
+🪖 Mission Management System
+The Mission Management System facilitates the management of military or organizational missions. It prompts the user to enter details for personnel and resources, validating inputs like ID (digits), names (letters only), and quantities (positive integers). After gathering a list of personnel and resources, users choose one of four mission types: Recon, Rescue, Combat, or Humanitarian. The system collects mission-specific details including ID, name, start/end dates, and mission status. It checks that the end date is not earlier than the start date. Once the mission is created, tasks are assigned, resources are allocated, progress is tracked, and a mission report is generated.
 
-# 2. Mission Management System
-The mission system simulates military or emergency operations. It allows users to:
-
-Add multiple personnel (validated by ID and name).
-
-Register multiple resources.
-
-Choose a mission type (Recon, Rescue, Combat, Humanitarian).
-
-Enter mission details such as name, ID, start and end dates (validated date format), and status.
-
-Depending on the selected type, specific validation rules are enforced (e.g., Recon missions require at least two personnel). Once data is captured, tasks are assigned, resources allocated, and mission progress is tracked. The system concludes by generating a mission report.
-
-# 3. Nursery School Management System
-This is a class-based school simulation consisting of Baby Class, Middle Class, and Top Class. The menu-driven system offers options to assign teachers, enroll students, conduct activities, add assessments (for Top Class only), track progress, and generate reports.
-
-Students and teachers are added using validated input. The design uses polymorphism where shared behaviors (like enrollment or reporting) are defined in a superclass or interface, while class-specific actions (like assessments in Top Class) are handled via class-specific implementations. It provides a basic but robust simulation of a nursery school environment.
-
-Overall Design and Architecture
-Each system is well-structured and follows Object-Oriented Programming (OOP) principles. Input validation, menu-based navigation, and clean encapsulation of class responsibilities are consistently implemented. All three systems use scanner-based input, and each has structured user interaction workflows, ensuring the systems are user-friendly and robust against incorrect inputs.
+🏫 Nursery School Management System
+The Nursery School Management System allows administrators to manage different nursery classes: Baby Class, Middle Class, and Top Class. Users can assign teachers, enroll students, conduct activities, and—specifically for the Top Class—add assessments. The system uses a Map<Integer, NurseryClass> to dynamically access and manipulate the appropriate class based on user input. It includes input validation for IDs (digits), names (letters), and age (integer). Each action (assignment, enrollment, etc.) is performed through method calls on class-specific objects. Reports can be generated to track progress or review overall class activity.
